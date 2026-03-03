@@ -19,5 +19,13 @@ class Program
         mySecondJob._startYear = 2022;
         mySecondJob._endYear = 2026;
         mySecondJob.DisplayJob();
+
+        Resume myResume = new Resume();
+        myResume._name = "H";
+        myResume._jobs = new List<Job>();
+        myResume._jobs.Add(myFirstJob);
+        myResume._jobs.Add(mySecondJob);
+
+        myResume.DisplayResume();
     }
 }
